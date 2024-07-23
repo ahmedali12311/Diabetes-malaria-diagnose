@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام توقع الصحة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            direction: rtl;
+            overflow-x: hidden;
+        }
+        header {
+            background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*C4Xvj4KPCm1J9SLtaANWxg.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 200px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 54px;
+            
+        }
+        .container {
+            padding: 20px;
+            flex: 1;
+        }
+        .card {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 250px;
+            height: auto;
+        }
+        .card-content {
+            padding: 20px;
+            flex: 1;
+        }
+        .card-content h2 {
+            margin-top: 0;
+        }
+        .card-content p {
+            font-size: 18px;
+        }
+        .card-content button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .card-content button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>نظام توقع الصحة</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="https://d18yrmqbzi0q7a.cloudfront.net/wp-content/uploads/diabetes-symptoms-and-treatment.jpg" alt="السكري">
+            <div class="card-content">
+                <h2>توقع السكري</h2>
+                <p>يساعد هذا النظام في توقع احتمالية الإصابة بالسكري بناءً على معايير صحية مختلفة. قم بإجراء الاختبار لمعرفة مستوى الخطر لديك.</p>
+                <button onclick="location.href='/diabetes'">قم بإجراء الاختبار</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Malaria.jpg/600px-Malaria.jpg" alt="الملاريا">
+            <div class="card-content">
+                <h2>كشف الملاريا</h2>
+                <p>يستخدم نظام كشف الملاريا الخاص بنا خوارزميات متقدمة لتحليل الأعراض وتقديم تقييم لمستوى الخطر. قم بإجراء الاختبار لمعرفة النتيجة.</p>
+                <button onclick="location.href='/malaria'">قم بإجراء الاختبار</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 نظام توقع الصحة. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
